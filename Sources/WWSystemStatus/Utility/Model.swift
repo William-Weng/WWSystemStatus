@@ -20,6 +20,21 @@ public extension WWSystemStatus {
     struct Service: Decodable {
         let serviceName: String
         let redirectUrl: String?
-        let events: [String]
+        let events: [Event]
+    }
+    
+    /// 事件結構
+    struct Event: Decodable {
+        
+        let affectedServices: [String]
+        let eventStatus: String
+        let startDate: String
+        let endDate: String?
+        let epochStartDate: TimeInterval
+        let messageId: String
+        let statusType: String
+        let datePosted: String
+        let usersAffected: String
+        let message: String
     }
 }

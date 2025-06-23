@@ -11,6 +11,7 @@ extension WWSystemStatus {
     
     /// 自定義錯誤
     enum CustomError: Error {
+        case isEmpty
         case responseNull
         case formatError
         case httpError(_ code: Int)
