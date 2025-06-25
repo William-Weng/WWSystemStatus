@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWSystemStatus",
       "state" : {
-        "revision" : "3a86315d753da9ac32de2dd582b363091ca22e79",
-        "version" : "1.0.0"
+        "revision" : "1f7373d7121e7506d691101f097af5c0a938acb0",
+        "version" : "1.0.1"
       }
     }
   ],

@@ -46,7 +46,8 @@ public extension WWSystemStatus {
         let result = await response(langCode: langCode)
         
         switch result {
-        case .failure(let error): return .failure(error)
+        case .failure(let error):
+            return .failure(error)
         case .success(let data):
             guard let status = data._class(type: SystemStatus.self) else { return .failure(CustomError.formatError) }
             return .success(status)

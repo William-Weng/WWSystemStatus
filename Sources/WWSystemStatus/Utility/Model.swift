@@ -26,11 +26,12 @@ public extension WWSystemStatus {
     /// 事件結構
     struct Event: Decodable {
         
-        let affectedServices: [String]
+        let affectedServices: [String?]?
         let eventStatus: String
         let startDate: String
         let endDate: String?
-        let epochStartDate: TimeInterval
+        let epochStartDate: Int
+        let epochEndDate: Int?
         let messageId: String
         let statusType: String
         let datePosted: String
